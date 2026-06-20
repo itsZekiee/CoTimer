@@ -1,0 +1,19 @@
+{
+  "name": "CoTimer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "private": true,
+  "dependencies": {
+    "firebase": "^12.15.0"
+  }
+}
