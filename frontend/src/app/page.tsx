@@ -30,15 +30,15 @@ export default function Home() {
                 <Zap size={14} className="fill-teal-700" />
                 OPERATIONAL VELOCITY REDEFINED
               </div>
-              <h1 className="text-5xl lg:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight leading-[1.05]">
+              <h1 className="text-5xl lg:text-[72px] font-bold text-[#001f1f] mb-8 tracking-tight leading-[1.1]">
                 Synchronize Your <br/> Team's <br/>
-                <span className="text-teal-600 italic">Operational <br/> Velocity.</span>
+                <span className="text-[#006d6d]">Operational <br/> Velocity.</span>
               </h1>
               <p className="max-w-xl text-lg text-slate-600 mb-10 leading-relaxed font-medium">
                 Transform asynchronous time management into a structured, unified operational asset. Scale with surgical precision across global workflows.
               </p>
               <div className="flex flex-wrap justify-start gap-4">
-                <button className="bg-teal-700 text-white px-8 py-4 rounded-lg font-bold text-base hover:bg-teal-800 transition-all shadow-lg shadow-teal-700/20">
+                <button className="bg-[#006d6d] text-white px-8 py-4 rounded-lg font-bold text-base hover:bg-[#005a5a] transition-all">
                   Start Free Trial
                 </button>
                 <button className="bg-white text-slate-900 border-2 border-slate-200 px-8 py-4 rounded-lg font-bold text-base hover:bg-slate-50 transition-all">
@@ -70,18 +70,18 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: <Timer className="text-teal-600" />, title: "Live Sprint Synchronizer", desc: "Unified timer orchestration for global teams. Ensure every member is aligned with the current sprint heartbeat in real-time." },
-              { icon: <MousePointer2 className="text-teal-600" />, title: "Focus Velocity Index", desc: "Advanced algorithmic scoring of team productivity. Identify bottlenecks and throughput variances with surgical precision." },
-              { icon: <Zap className="text-teal-600" />, title: "Integration Engine", desc: "Deep hooks into Jira, Slack, and Trello. Automate state transitions based on operational data triggers." },
-              { icon: <ShieldCheck className="text-teal-600" />, title: "Enterprise Security", desc: "SOC2 compliance, SSO integration, and role-based access control for secure organizational scaling." },
-              { icon: <BarChart3 className="text-teal-600" />, title: "Predictive Analytics", desc: "Forecast sprint completion dates based on historical velocity trends and current team bandwidth." },
-              { icon: <Users2 className="text-teal-600" />, title: "Resource Allocation", desc: "Dynamic visual mapping of team capacity versus task load to prevent burnout and ensure optimal balance." },
+              { icon: <Timer className="text-[#006d6d]" />, title: "Live Sprint Synchronizer", desc: "Unified timer orchestration for global teams. Ensure every member is aligned with the current sprint heartbeat in real-time." },
+              { icon: <MousePointer2 className="text-[#006d6d]" />, title: "Focus Velocity Index", desc: "Advanced algorithmic scoring of team productivity. Identify bottlenecks and throughput variances with surgical precision." },
+              { icon: <Zap className="text-[#006d6d]" />, title: "Integration Engine", desc: "Deep hooks into Jira, Slack, and Trello. Automate state transitions based on operational data triggers." },
+              { icon: <ShieldCheck className="text-[#006d6d]" />, title: "Enterprise Security", desc: "SOC2 compliance, SSO integration, and role-based access control for secure organizational scaling." },
+              { icon: <BarChart3 className="text-[#006d6d]" />, title: "Predictive Analytics", desc: "Forecast sprint completion dates based on historical velocity trends and current team bandwidth." },
+              { icon: <Users2 className="text-[#006d6d]" />, title: "Resource Allocation", desc: "Dynamic visual mapping of team capacity versus task load to prevent burnout and ensure optimal balance." },
             ].map((feature, i) => (
-              <div key={i} className="bg-slate-50/50 p-10 rounded-2xl border border-slate-100 text-left hover:shadow-xl hover:shadow-teal-900/5 transition-all group">
-                <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-8 border border-slate-100 group-hover:scale-110 transition-transform">
+              <div key={i} className="bg-white p-10 rounded-2xl border border-slate-100 text-left hover:shadow-xl hover:shadow-teal-900/5 transition-all group">
+                <div className="w-12 h-12 bg-teal-50 rounded-xl shadow-sm flex items-center justify-center mb-8 border border-teal-100 group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">{feature.title}</h3>
+                <h3 className="text-xl font-bold text-[#001f1f] mb-4">{feature.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed font-medium">
                   {feature.desc}
                 </p>
@@ -112,7 +112,7 @@ export default function Home() {
               <div className="space-y-4 mb-10 flex-grow">
                 {["Up to 5 Users", "Live Sprint Synchronizer", "Standard Integrations"].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 text-sm text-slate-600 font-medium">
-                    <CheckCircle2 size={16} className="text-teal-600" />
+                    <CheckCircle2 size={16} className="text-[#006d6d]" />
                     {item}
                   </div>
                 ))}
@@ -123,11 +123,11 @@ export default function Home() {
             </div>
 
             {/* Professional */}
-            <div className="bg-white p-10 rounded-2xl border-2 border-teal-600 flex flex-col relative shadow-2xl shadow-teal-900/10 scale-105 z-10">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-teal-600 text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">
+            <div className="bg-white p-10 rounded-2xl border-2 border-[#006d6d] flex flex-col relative shadow-2xl shadow-teal-900/10 scale-105 z-10">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#006d6d] text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">
                 Most Popular
               </div>
-              <span className="text-[10px] font-bold text-teal-600 uppercase tracking-widest mb-4">Professional</span>
+              <span className="text-[10px] font-bold text-[#006d6d] uppercase tracking-widest mb-4">Professional</span>
               <div className="flex items-baseline gap-1 mb-6">
                 <span className="text-4xl font-extrabold text-slate-900">$29</span>
                 <span className="text-slate-400 font-medium">/user/mo</span>
@@ -136,12 +136,12 @@ export default function Home() {
               <div className="space-y-4 mb-10 flex-grow">
                 {["Unlimited Users", "Focus Velocity Index", "Custom Workflows", "24/7 Priority Support"].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 text-sm text-slate-600 font-medium">
-                    <CheckCircle2 size={16} className="text-teal-600" />
+                    <CheckCircle2 size={16} className="text-[#006d6d]" />
                     {item}
                   </div>
                 ))}
               </div>
-              <button className="w-full py-3 bg-teal-700 text-white rounded-lg font-bold text-sm hover:bg-teal-800 transition-all shadow-lg shadow-teal-700/20">
+              <button className="w-full py-3 bg-[#006d6d] text-white rounded-lg font-bold text-sm hover:bg-[#005a5a] transition-all shadow-lg shadow-teal-700/20">
                 Get Started
               </button>
             </div>
@@ -156,7 +156,7 @@ export default function Home() {
               <div className="space-y-4 mb-10 flex-grow">
                 {["Unlimited Data Retention", "SSO & Advanced Security", "Dedicated Account Manager", "Custom API Access"].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 text-sm text-slate-600 font-medium">
-                    <CheckCircle2 size={16} className="text-teal-600" />
+                    <CheckCircle2 size={16} className="text-[#006d6d]" />
                     {item}
                   </div>
                 ))}
@@ -184,9 +184,9 @@ export default function Home() {
               "How does CoTimer handle timezones?",
               "What is the implementation timeline?",
             ].map((q, i) => (
-              <div key={i} className="border border-slate-100 bg-slate-50/50 rounded-xl p-6 flex items-center justify-between cursor-pointer hover:bg-slate-100 transition-colors">
-                <span className="font-bold text-slate-800">{q}</span>
-                <ChevronDown size={18} className="text-teal-600" />
+              <div key={i} className="border border-slate-100 bg-white rounded-xl p-6 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors">
+                <span className="font-bold text-[#001f1f]">{q}</span>
+                <ChevronDown size={18} className="text-[#006d6d]" />
               </div>
             ))}
           </div>
@@ -238,10 +238,10 @@ export default function Home() {
             Join the ecosystem that transforms time into your team's most valuable operational asset. Experience the CoTimer difference today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-teal-600 text-white px-10 py-4 rounded-lg font-bold hover:bg-teal-700 transition-all">
+            <button className="bg-[#006d6d] text-white px-10 py-4 rounded-lg font-bold hover:bg-[#005a5a] transition-all">
               Get Started Now
             </button>
-            <button className="bg-transparent text-white border-2 border-white px-10 py-4 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition-all">
+            <button className="bg-transparent text-white border-2 border-white px-10 py-4 rounded-lg font-bold hover:bg-white hover:text-[#001f1f] transition-all">
               Schedule Demo
             </button>
           </div>
@@ -253,8 +253,8 @@ export default function Home() {
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
             <div>
-              <div className="flex items-center gap-2 text-xl font-bold text-slate-800 mb-6">
-                <div className="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center">
+              <div className="flex items-center gap-2 text-xl font-bold text-[#001f1f] mb-6">
+                <div className="w-8 h-8 bg-[#006d6d] rounded-lg flex items-center justify-center">
                   <div className="w-4 h-4 border-2 border-white rounded-full border-t-transparent"></div>
                 </div>
                 CoTimer

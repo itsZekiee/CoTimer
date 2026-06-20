@@ -56,7 +56,7 @@ export default function Header() {
           <Link href="/#faqs" onClick={(e) => scrollToSection(e, "faqs")} className="text-sm font-medium text-gray-600 hover:text-teal-600 transition-colors">FAQs</Link>
           <Link href="/#contact" onClick={(e) => scrollToSection(e, "contact")} className="text-sm font-medium text-gray-600 hover:text-teal-600 transition-colors">Contact Us</Link>
         </nav>
-        <button className="bg-slate-900 text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-slate-800 transition-all shadow-sm">
+        <button className="bg-[#006d6d] text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-[#005a5a] transition-all shadow-sm">
           Book a Demo
         </button>
       </div>
