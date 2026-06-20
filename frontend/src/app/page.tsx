@@ -22,19 +22,27 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section id="home" className="relative pt-20 pb-20 lg:pt-32 lg:pb-32 overflow-hidden bg-[#f8fafc]">
-        <div className="container mx-auto px-6 max-w-7xl">
+      <section id="home" className="relative pt-20 pb-20 lg:pt-32 lg:pb-32 overflow-hidden bg-white">
+        <div className="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
+          <img 
+            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?q=80&w=2074&auto=format&fit=crop" 
+            alt="Data Center" 
+            className="w-full h-full object-cover opacity-90"
+          />
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-white"></div>
+        </div>
+        <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-xs font-semibold mb-6 border border-teal-100">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-xs font-semibold mb-6 border border-teal-100 uppercase tracking-wide">
                 <Zap size={14} className="fill-teal-700" />
                 OPERATIONAL VELOCITY REDEFINED
               </div>
-              <h1 className="text-5xl lg:text-[72px] font-bold text-[#001f1f] mb-8 tracking-tight leading-[1.1]">
+              <h1 className="text-5xl lg:text-7xl font-bold text-[#001f1f] mb-8 tracking-tight leading-tight">
                 Synchronize Your <br/> Team's <br/>
                 <span className="text-[#006d6d]">Operational <br/> Velocity.</span>
               </h1>
-              <p className="max-w-xl text-lg text-slate-600 mb-10 leading-relaxed font-medium">
+              <p className="max-w-xl text-lg text-slate-500 mb-10 leading-relaxed font-medium">
                 Transform asynchronous time management into a structured, unified operational asset. Scale with surgical precision across global workflows.
               </p>
               <div className="flex flex-wrap justify-start gap-4">
@@ -46,12 +54,12 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="flex-1 relative">
-              <div className="rounded-3xl overflow-hidden shadow-2xl shadow-teal-900/10 border-8 border-white/50">
+            <div className="flex-1 lg:hidden">
+              <div className="rounded-3xl overflow-hidden shadow-2xl border-8 border-white/50">
                 <img 
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop" 
-                  alt="Team working" 
-                  className="w-full h-auto object-cover min-h-[400px]"
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?q=80&w=2074&auto=format&fit=crop" 
+                  alt="Data Center" 
+                  className="w-full h-auto object-cover"
                 />
               </div>
             </div>
@@ -77,9 +85,11 @@ export default function Home() {
               { icon: <BarChart3 className="text-[#006d6d]" />, title: "Predictive Analytics", desc: "Forecast sprint completion dates based on historical velocity trends and current team bandwidth." },
               { icon: <Users2 className="text-[#006d6d]" />, title: "Resource Allocation", desc: "Dynamic visual mapping of team capacity versus task load to prevent burnout and ensure optimal balance." },
             ].map((feature, i) => (
-              <div key={i} className="bg-white p-10 rounded-2xl border border-slate-100 text-left hover:shadow-xl hover:shadow-teal-900/5 transition-all group">
-                <div className="w-12 h-12 bg-teal-50 rounded-xl shadow-sm flex items-center justify-center mb-8 border border-teal-100 group-hover:scale-110 transition-transform">
-                  {feature.icon}
+              <div key={i} className="bg-white p-10 rounded-2xl border border-slate-100 text-left hover:shadow-xl hover:shadow-teal-900/5 transition-all group cursor-default">
+                <div className="w-12 h-12 bg-teal-50 rounded-xl shadow-sm flex items-center justify-center mb-8 border border-teal-100 group-hover:bg-[#006d6d] transition-colors">
+                  <div className="group-hover:text-white transition-colors">
+                    {feature.icon}
+                  </div>
                 </div>
                 <h3 className="text-xl font-bold text-[#001f1f] mb-4">{feature.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed font-medium">
@@ -101,8 +111,8 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Starter */}
-            <div className="bg-white p-10 rounded-2xl border border-slate-200 flex flex-col">
+              {/* Starter */}
+            <div className="bg-white p-10 rounded-2xl border border-slate-200 flex flex-col hover:shadow-xl hover:shadow-teal-900/5 transition-all">
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">Starter</span>
               <div className="flex items-baseline gap-1 mb-6">
                 <span className="text-4xl font-extrabold text-slate-900">$0</span>
@@ -147,7 +157,7 @@ export default function Home() {
             </div>
 
             {/* Enterprise */}
-            <div className="bg-white p-10 rounded-2xl border border-slate-200 flex flex-col">
+            <div className="bg-white p-10 rounded-2xl border border-slate-200 flex flex-col hover:shadow-xl hover:shadow-teal-900/5 transition-all">
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">Enterprise</span>
               <div className="flex items-baseline gap-1 mb-6">
                 <span className="text-4xl font-extrabold text-slate-900">Custom</span>
@@ -206,17 +216,17 @@ export default function Home() {
               
               <div className="space-y-8">
                 {[
-                  { icon: <Mail />, title: "Email Support", content: "solutions@cotimer.com" },
-                  { icon: <Phone />, title: "Enterprise Sales", content: "(+63) 9123 4567 89" },
-                  { icon: <MapPin />, title: "Location", content: "123 St., Santa Maria, Bulacan, PH" },
+                  { icon: <Mail size={20} />, title: "Email Support", content: "solutions@cotimer.com" },
+                  { icon: <Phone size={20} />, title: "Enterprise Sales", content: "(+63) 9123 4567 89" },
+                  { icon: <MapPin size={20} />, title: "Location", content: "123 St., Santa Maria, Bulacan, PH" },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-5">
-                    <div className="w-12 h-12 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center shrink-0">
+                  <div key={i} className="flex items-center gap-5">
+                    <div className="w-12 h-12 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center shrink-0 border border-teal-100 shadow-sm">
                       {item.icon}
                     </div>
                     <div>
-                      <h4 className="font-bold text-slate-900 mb-1 uppercase text-xs tracking-wider">{item.title}</h4>
-                      <p className="text-slate-500 font-medium">{item.content}</p>
+                      <h4 className="font-bold text-slate-900 mb-0.5 uppercase text-[10px] tracking-widest">{item.title}</h4>
+                      <p className="text-slate-500 font-medium text-sm">{item.content}</p>
                     </div>
                   </div>
                 ))}
@@ -231,7 +241,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-24 bg-slate-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop')] bg-cover bg-center"></div>
         <div className="container mx-auto px-6 max-w-7xl text-center relative z-10">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">Ready to accelerate?</h2>
           <p className="text-slate-300 max-w-2xl mx-auto mb-10 font-medium">
@@ -285,7 +295,7 @@ export default function Home() {
               <h4 className="font-bold text-slate-900 mb-6 uppercase text-[10px] tracking-widest">Connect</h4>
               <ul className="space-y-4 text-sm text-slate-500 font-medium">
                 <li className="flex items-center gap-2"><Globe size={16} /><a href="#" className="hover:text-teal-600 transition-colors">LinkedIn</a></li>
-                <li className="flex items-center gap-2"><Send size={16} /><a href="#" className="hover:text-teal-600 transition-colors">X (Twitter)</a></li>
+                <li className="flex items-center gap-2"><Zap size={16} /><a href="#" className="hover:text-teal-600 transition-colors">X (Twitter)</a></li>
                 <li className="flex items-center gap-2"><Globe size={16} /><a href="#" className="hover:text-teal-600 transition-colors">GitHub</a></li>
               </ul>
             </div>
