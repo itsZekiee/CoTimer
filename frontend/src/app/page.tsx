@@ -65,10 +65,16 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* Curved Divider */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-[60px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,64 C150,120 350,120 500,64 C650,8 850,8 1000,64 C1150,120 1350,120 1500,64 L1500,120 L0,120 Z" fill="#ffffff"></path>
+          </svg>
+        </div>
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-24 bg-white">
+      <section id="features" className="py-24 bg-white relative">
         <div className="container mx-auto px-6 max-w-7xl text-center">
           <div className="mb-20">
             <span className="text-teal-600 font-bold text-xs tracking-widest uppercase">Enterprise Connectivity</span>
@@ -99,10 +105,16 @@ export default function Home() {
             ))}
           </div>
         </div>
+        {/* Curved Divider */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-[60px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,64 C150,120 350,120 500,64 C650,8 850,8 1000,64 C1150,120 1350,120 1500,64 L1500,120 L0,120 Z" fill="#f8fafc"></path>
+          </svg>
+        </div>
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-24 bg-slate-50">
+      <section id="pricing" className="py-24 bg-slate-50 relative">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center mb-20">
             <span className="text-teal-600 font-bold text-xs tracking-widest uppercase">Pricing & Plans</span>
@@ -177,10 +189,16 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* Curved Divider */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-[60px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,64 C150,120 350,120 500,64 C650,8 850,8 1000,64 C1150,120 1350,120 1500,64 L1500,120 L0,120 Z" fill="#ffffff"></path>
+          </svg>
+        </div>
       </section>
 
       {/* FAQ Section */}
-      <section id="faqs" className="py-24 bg-white">
+      <section id="faqs" className="py-24 bg-white relative">
         <div className="container mx-auto px-6 max-w-3xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
@@ -194,12 +212,18 @@ export default function Home() {
               "How does CoTimer handle timezones?",
               "What is the implementation timeline?",
             ].map((q, i) => (
-              <div key={i} className="border border-slate-100 bg-white rounded-xl p-6 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors">
+              <div key={i} className="border border-slate-100 bg-[#f8fafc] rounded-xl p-6 flex items-center justify-between cursor-pointer hover:bg-slate-100 transition-colors">
                 <span className="font-bold text-[#001f1f]">{q}</span>
                 <ChevronDown size={18} className="text-[#006d6d]" />
               </div>
             ))}
           </div>
+        </div>
+        {/* Curved Divider */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-full h-[60px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,64 C150,120 350,120 500,64 C650,8 850,8 1000,64 C1150,120 1350,120 1500,64 L1500,120 L0,120 Z" fill="#f8fafc"></path>
+          </svg>
         </div>
       </section>
 
