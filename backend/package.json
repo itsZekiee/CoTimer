@@ -18,5 +18,9 @@
     "firebase": "^10.14.1",
     "firebase-admin": "^11.11.0",
     "trello-node-api": "^0.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "typescript": "^6.0.3"
   }
 }
